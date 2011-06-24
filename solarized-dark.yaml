@@ -41,14 +41,14 @@ member-list:
   selected:
     color: '#FDF6E3'
     background:
-      top-line-color: '#2AA198'
-      bottom-line-color: '#2AA198'
-      top-color: '#2AA198'
-      bottom-color: '#2AA198'
+      top-line-color: '#073642'
+      bottom-line-color: '#073642'
+      top-color: '#073642'
+      bottom-color: '#073642'
         
 server-tree:
   font-family: 'Lucida Grande'
-  font-size: 13.0
+  font-size: 12.0
   background-color: '#073642'
   highlight:
     color: '#CB4B16'
@@ -65,9 +65,9 @@ server-tree:
     active:
       color: '#FDF6E3'
     inactive:
-      color: '#073642'
+      color: '#93A1A1'
     background:
-      top-line-color: '#2AA198'
-      top-color: '#2AA198'
-      bottom-line-color: '#2AA198'
-      bottom-color: '#2AA198'
+      top-line-color: '#073642'
+      top-color: '#073642'
+      bottom-line-color: '#073642'
+      bottom-color: '#073642'
