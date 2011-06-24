@@ -15,10 +15,10 @@ input-text:
 member-list:
   font-family: 'Lucida Grande'
   font-size: 12.0
-  color: '#000'
-  background-color: '#EEE8D5'
+  color: '#073642'
+  background-color: '#FDF6E3'
   operator:
-    color: '#D30102'
+    color: '#CB4B16'
   selected:
     color: '#FDF6E3'
     background:
@@ -27,7 +27,7 @@ member-list:
 server-tree:
   font-family: 'Lucida Grande'
   font-size: 13.0
-  background-color: '#EEE8D5'
+  background-color: '#FDF6E3'
   highlight:
     color: '#93A1A1'
   newtalk:
