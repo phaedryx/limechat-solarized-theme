@@ -34,7 +34,7 @@ body { margin: 0; padding: 0; }
 
 /* the html tag has these classes and attributes too */
 body.normal {
-  margin-top: 1.8em;
+  margin-top: 2.0em;
 }
 body[type=channel] {}
 body[type=talk] {}
