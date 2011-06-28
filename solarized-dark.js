@@ -62,7 +62,10 @@
       var message_node;
       message_node = node.lastChild;
       if (node.className.includes('event')) {
-        if (message_node.getAttribute('type') === 'topic' || message_node.innerText.startsWith('Topic')) {
+        if (message_node.innerText.startsWith('Topic')) {
+          message_node.setAttribute('type', 'topic');
+        }
+        if (message_node.getAttribute('type') === 'topic') {
           return this.setTopic(message_node.innerText.match(/opic: (.*)$/)[1]);
         }
       }
