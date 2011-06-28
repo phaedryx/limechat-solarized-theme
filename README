@@ -1,3 +1,7 @@
 A limechat theme based on the solarized color scheme: http://ethanschoonover.com/solarized
 
 Put the *.js, *.yaml, and *.css files in ~/Library/Application\ Support/LimeChat/Themes
+
+The dark variation is almost complete, but the light variation still needs work.
+
+Special feature: click the topic bar in a channel to toggle channel events
