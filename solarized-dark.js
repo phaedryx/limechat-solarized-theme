@@ -36,16 +36,17 @@
       }
     };
     SolarizedDark.prototype.addListeners = function() {
-      return this.doc.addEventListener("DOMNodeInserted", this.processNode, false);
-    };
-    SolarizedDark.prototype.processNode = function(ev) {
-      var node;
-      if (bodyAttribute('type') === 'channel') {
+      var processNode;
+      processNode = __bind(function(ev) {
+        var node;
         node = ev.target;
-        this.checkTimestamp(node);
-        this.checkTopic(node);
-        return this.checkEvent(node);
-      }
+        if (this.bodyAttribute('type') === 'channel') {
+          this.checkTimestamp(node);
+          this.checkTopic(node);
+          return this.checkEvent(node);
+        }
+      }, this);
+      return this.doc.addEventListener("DOMNodeInserted", processNode, false);
     };
     SolarizedDark.prototype.checkTimestamp = function(node) {
       var curr_time_node, prev_time_node;

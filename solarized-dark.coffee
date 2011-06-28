@@ -26,20 +26,18 @@ class SolarizedDark
         @topic = @doc.createElement('div')
         @topic.id = 'topic'
         @body.appendChild(@topic)
-        @topic.onclick =
-          => @toggleEvents()
+        @topic.onclick = => @toggleEvents()
       if @bodyAttribute('type') == "talk"
         @setTopic('Private Channel')
     
   addListeners: ->
-    @doc.addEventListener("DOMNodeInserted", @processNode, false)
-    
-  processNode: (ev) ->
-    if bodyAttribute('type') == 'channel'
+    processNode = (ev) =>
       node = ev.target
-      @checkTimestamp(node)
-      @checkTopic(node)
-      @checkEvent(node)
+      if @bodyAttribute('type') == 'channel'
+        @checkTimestamp(node)
+        @checkTopic(node)
+        @checkEvent(node)
+    @doc.addEventListener("DOMNodeInserted", processNode, false)
   
   checkTimestamp: (node) ->
     prev_time_node = node.previousSibling.firstChild
